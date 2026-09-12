@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ShopOP</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <a href="index.html" class="text-2xl font-bold text-green-600">
+                ShopOP
+            </a>
+
+            <div class="flex gap-8 font-medium">
+                <a href="index.html" class="hover:text-green-600">Home</a>
+                <a href="shop.html" class="hover:text-green-600">Shop</a>
+                <a href="product.html" class="hover:text-green-600">Product</a>
+                <a href="cart.html" class="hover:text-green-600">Cart</a>
+                <a href="contact.html" class="text-green-600">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="bg-green-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <h1 class="text-4xl md:text-5xl font-bold">
+                Contact Us
+            </h1>
+
+            <p class="mt-5 text-green-100 text-lg">
+                Have a question? We would love to hear from you.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Contact Information -->
+            <div>
+
+                <h2 class="text-3xl font-bold mb-6">
+                    Get in Touch
+                </h2>
+
+                <p class="text-gray-600 leading-7 mb-8">
+                    If you have any questions about our products, orders,
+                    delivery or anything else, feel free to contact us.
+                    Our team will be happy to help you.
+                </p>
+
+
+                <div class="space-y-6">
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-100 text-green-600 p-3 rounded-lg">
+                            📧
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg">
+                                Email
+                            </h3>
+
+                            <p class="text-gray-600">
+                                support@shopop.com
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-100 text-green-600 p-3 rounded-lg">
+                            📞
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg">
+                                Phone
+                            </h3>
+
+                            <p class="text-gray-600">
+                                +92 300 1234567
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-100 text-green-600 p-3 rounded-lg">
+                            📍
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg">
+                                Location
+                            </h3>
+
+                            <p class="text-gray-600">
+                                Karachi, Pakistan
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-sm border p-8">
+
+                <h2 class="text-2xl font-bold mb-6">
+                    Send Us a Message
+                </h2>
+
+                <form id="contact-form">
+
+                    <div class="mb-5">
+                        <label class="block font-medium mb-2">
+                            Your Name
+                        </label>
+
+                       <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Enter your name"
+    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    required
+>
+                    </div>
+
+
+                    <div class="mb-5">
+                        <label class="block font-medium mb-2">
+                            Email Address
+                        </label>
+
+                       <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Enter your email"
+    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    required
+>
+                    </div>
+
+
+                    <div class="mb-5">
+                        <label class="block font-medium mb-2">
+                            Subject
+                        </label>
+
+                       <input
+    type="text"
+    id="subject"
+    name="subject"
+    placeholder="Enter subject"
+    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    required
+>
+                    </div>
+
+
+                    <div class="mb-6">
+                        <label class="block font-medium mb-2">
+                            Message
+                        </label>
+
+                     <textarea
+    id="message"
+    name="message"
+    rows="5"
+    placeholder="Write your message..."
+    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    required
+></textarea>
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <h2 class="text-2xl font-bold text-green-500">
+                ShopOP
+            </h2>
+
+            <p class="text-gray-400 mt-3">
+                Simple shopping. Better experience.
+            </p>
+
+            <div class="mt-6 flex justify-center gap-6">
+                <a href="index.html" class="text-gray-400 hover:text-white">
+                    Home
+                </a>
+
+                <a href="shop.html" class="text-gray-400 hover:text-white">
+                    Shop
+                </a>
+
+                <a href="contact.html" class="text-gray-400 hover:text-white">
+                    Contact
+                </a>
+            </div>
+
+            <p class="text-gray-500 mt-8 text-sm">
+                © 2026 ShopOP. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+<script>
+    emailjs.init({
+        publicKey: "gwmrVuze25ulfHeQ4"
+    });
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const button = this.querySelector("button");
+
+        button.innerText = "Sending...";
+        button.disabled = true;
+
+        const time = new Date().toLocaleString();
+
+        const templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+            time: time
+        };
+
+        emailjs.send(
+            "service_ac6cfwz",
+            "template_5pujvqs",
+            templateParams
+        )
+        .then(function() {
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+
+            button.innerText = "Send Message";
+            button.disabled = false;
+        })
+        .catch(function(error) {
+            console.error(error);
+
+            alert("Failed to send message. Please try again.");
+
+            button.innerText = "Send Message";
+            button.disabled = false;
+        });
+    });
+</script>
+</html>
+
